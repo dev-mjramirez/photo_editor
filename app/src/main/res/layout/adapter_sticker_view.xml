@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+         xmlns:android="http://schemas.android.com/apk/res/android"
+         xmlns:tools="http://schemas.android.com/tools"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:orientation="vertical"
+         android:layout_margin="2dp">
+
+    <TextView
+            android:id="@+id/txtStickerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="1dp"
+            android:textSize="6sp"
+            tools:text="sticker" />
+
+    <ImageView
+            android:id="@+id/imgStickerView"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/txtStickerName"
+            android:scaleType="fitXY"
+            android:src="@drawable/cute_baby"/>
+
+</LinearLayout>

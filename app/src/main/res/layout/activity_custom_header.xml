@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:app="http://schemas.android.com/apk/res-auto"
+       android:id="@+id/toolbar_top"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:minHeight="?attr/actionBarSize"
+       android:layout_margin="0dp"
+       app:contentInsetStart="0dp">
+
+    <LinearLayout
+            android:id="@+id/ll_title"
+            android:layout_alignParentTop="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+        <TextView
+                android:id="@+id/tv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/darkGray"
+                android:text="＜戻る"/>
+
+        <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/darkGray"
+                android:text="スタンプ"/>
+
+        <TextView
+                android:id="@+id/tv_continue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/darkBlue"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="次へ"/>
+    </LinearLayout>
+
+</androidx.appcompat.widget.Toolbar>

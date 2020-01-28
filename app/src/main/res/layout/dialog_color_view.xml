@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/rl_colorview_container"
+              android:visibility="gone"
+              android:background="@color/white"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <TextView android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:id="@+id/tv_color"
+              android:gravity="center"
+              android:textSize="6sp"
+              android:text="Color"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvColorView"
+            android:layout_below="@id/tv_color"
+            android:layout_width="match_parent"
+            android:layout_height="94dp"/>
+
+    <LinearLayout android:id="@+id/ll_btn"
+                  android:layout_width="match_parent"
+                  android:layout_height="60dp"
+                  android:padding="8dp"
+                  android:layout_below="@id/rvColorView"
+                  android:background="@drawable/bg_border_top">
+
+        <LinearLayout android:id="@+id/ll_cancel"
+                      android:layout_width="0dp"
+                      android:layout_weight="1"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical"
+                      android:gravity="center">
+
+            <ImageView android:layout_width="25dp"
+                       android:layout_height="25dp"
+                       android:src="@drawable/ic_cancel"/>
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Cancel"/>
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/ll_done"
+                      android:layout_width="0dp"
+                      android:layout_weight="1"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical"
+                      android:gravity="center">
+
+            <ImageView android:layout_width="25dp"
+                       android:layout_height="25dp"
+                       android:src="@drawable/ic_done_on"/>
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Done"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

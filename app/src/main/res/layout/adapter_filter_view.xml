@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_margin="2dp">
+
+    <TextView
+            android:id="@+id/txtStickerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="4dp"
+            android:textSize="6sp"
+            tools:text="filtername" />
+
+    <ImageView
+            android:id="@+id/photoEditorView"
+            android:layout_above="@id/viewPager"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/cute_baby" />
+</LinearLayout>

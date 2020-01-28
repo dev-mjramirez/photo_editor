@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Beco Android</string>
+    <string name="double_click_input_text">Double-click to enter text</string>
+    <string name="done">Done</string>
+    <string name="input_text">Input text</string>
+    <string name="over_text_limit">You have exceeded the word limit</string>
+</resources>
